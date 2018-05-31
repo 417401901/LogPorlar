@@ -1,0 +1,3 @@
+/home/wangx/文档/Test1.30/CMakeFiles/edit_cache.dir
+/home/wangx/文档/Test1.30/CMakeFiles/rebuild_cache.dir
+/home/wangx/文档/Test1.30/CMakeFiles/open.dir
