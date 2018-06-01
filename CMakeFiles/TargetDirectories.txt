@@ -1,3 +1,6 @@
-/home/wangx/文档/Test1.30/CMakeFiles/edit_cache.dir
-/home/wangx/文档/Test1.30/CMakeFiles/rebuild_cache.dir
-/home/wangx/文档/Test1.30/CMakeFiles/open.dir
+/home/wangx/文档/LogPorlar/CMakeFiles/edit_cache.dir
+/home/wangx/文档/LogPorlar/CMakeFiles/rebuild_cache.dir
+/home/wangx/文档/LogPorlar/CMakeFiles/demo.dir
+/home/wangx/文档/LogPorlar/src/CMakeFiles/edit_cache.dir
+/home/wangx/文档/LogPorlar/src/CMakeFiles/rebuild_cache.dir
+/home/wangx/文档/LogPorlar/src/CMakeFiles/libfileconver.dir

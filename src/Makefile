@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangx/文档/LogPorlar/CMakeFiles /home/wangx/文档/LogPorlar/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/wangx/文档/LogPorlar && $(CMAKE_COMMAND) -E cmake_progress_start /home/wangx/文档/LogPorlar/CMakeFiles /home/wangx/文档/LogPorlar/src/CMakeFiles/progress.marks
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangx/文档/LogPorlar/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wangx/文档/LogPorlar && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named demo
+# Convenience name for target.
+src/CMakeFiles/libfileconver.dir/rule:
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/libfileconver.dir/rule
+.PHONY : src/CMakeFiles/libfileconver.dir/rule
 
-# Build rule for target.
-demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo
-.PHONY : demo
+# Convenience name for target.
+libfileconver: src/CMakeFiles/libfileconver.dir/rule
 
-# fast build rule for target.
-demo/fast:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
-.PHONY : demo/fast
-
-#=============================================================================
-# Target rules for targets named libfileconver
-
-# Build rule for target.
-libfileconver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libfileconver
 .PHONY : libfileconver
 
 # fast build rule for target.
 libfileconver/fast:
-	$(MAKE) -f src/CMakeFiles/libfileconver.dir/build.make src/CMakeFiles/libfileconver.dir/build
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f src/CMakeFiles/libfileconver.dir/build.make src/CMakeFiles/libfileconver.dir/build
 .PHONY : libfileconver/fast
 
-main.o: main.cpp.o
+FileConversion.o: FileConversion.cpp.o
 
-.PHONY : main.o
+.PHONY : FileConversion.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.o
-.PHONY : main.cpp.o
+FileConversion.cpp.o:
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f src/CMakeFiles/libfileconver.dir/build.make src/CMakeFiles/libfileconver.dir/FileConversion.cpp.o
+.PHONY : FileConversion.cpp.o
 
-main.i: main.cpp.i
+FileConversion.i: FileConversion.cpp.i
 
-.PHONY : main.i
+.PHONY : FileConversion.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.i
-.PHONY : main.cpp.i
+FileConversion.cpp.i:
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f src/CMakeFiles/libfileconver.dir/build.make src/CMakeFiles/libfileconver.dir/FileConversion.cpp.i
+.PHONY : FileConversion.cpp.i
 
-main.s: main.cpp.s
+FileConversion.s: FileConversion.cpp.s
 
-.PHONY : main.s
+.PHONY : FileConversion.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/main.cpp.s
-.PHONY : main.cpp.s
+FileConversion.cpp.s:
+	cd /home/wangx/文档/LogPorlar && $(MAKE) -f src/CMakeFiles/libfileconver.dir/build.make src/CMakeFiles/libfileconver.dir/FileConversion.cpp.s
+.PHONY : FileConversion.cpp.s
 
 # Help Target
 help:
@@ -171,11 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... demo"
 	@echo "... libfileconver"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... FileConversion.o"
+	@echo "... FileConversion.i"
+	@echo "... FileConversion.s"
 .PHONY : help
 
 
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wangx/文档/LogPorlar && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

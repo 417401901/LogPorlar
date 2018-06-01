@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibfileconver.a  CMakeFiles/libfileconver.dir/FileConversion.cpp.o
+/usr/bin/ranlib liblibfileconver.a

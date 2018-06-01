@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/wangx/文档/Test1.30/a.cpp
-stdio.h
-/home/wangx/文档/Test1.30/stdio.h
-opencv2/opencv.hpp
-/home/wangx/文档/Test1.30/opencv2/opencv.hpp
+/home/wangx/文档/LogPorlar/./src/FileConversion.h
 iostream
-/home/wangx/文档/Test1.30/iostream
+-
+opencv2/opencv.hpp
+/home/wangx/文档/LogPorlar/./src/opencv2/opencv.hpp
+
+/home/wangx/文档/LogPorlar/main.cpp
+./src/FileConversion.h
+/home/wangx/文档/LogPorlar/./src/FileConversion.h
 
 /usr/local/include/opencv2/calib3d/calib3d.hpp
 opencv2/core/core.hpp

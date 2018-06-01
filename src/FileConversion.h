@@ -9,16 +9,21 @@ using namespace std;
 class FlieConvert
 {
 public:
-    FlieConvert::FlieConvert();
-    FlieConvert::~FlieConvert();
+    FlieConvert(int sizeli);
+    FlieConvert();
+    ~FlieConvert();
 
     bool setFile2Data(const string file);
     bool doConert();
-    bool getData2Bin(const string file);
+    bool getData2Bin(const char *file);
+    
 private:
+    int lineSize;
     Mat srcImage;
     Mat resImage;
+    IplImage* src;
+    IplImage* res;
     Vector<uchar> resBin;
-}
+};
 
 #endif

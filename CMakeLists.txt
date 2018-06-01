@@ -1,4 +1,4 @@
-PROJECT(open)
+PROJECT(demo)
 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 if(COMMAND cmake_policy)
@@ -7,9 +7,12 @@ endif(COMMAND cmake_policy)
 
 FIND_PACKAGE( OpenCV REQUIRED )
 
-# Declare the target (an executable)
-ADD_EXECUTABLE(open a.cpp)
+ADD_SUBDIRECTORY( src )
+AUX_SOURCE_DIRECTORY(. DIR_SRCS)
 
-TARGET_LINK_LIBRARIES(open ${OpenCV_LIBS})
+# Declare the target (an executable)
+ADD_EXECUTABLE(demo ${DIR_SRCS})
+
+TARGET_LINK_LIBRARIES(demo libfileconver)
 
 #MESSAGE(STATUS "OpenCV_LIBS: ${OpenCV_LIBS}")
